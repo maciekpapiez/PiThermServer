@@ -41,7 +41,7 @@ function readAllTemperatures(callback) {
       readTemp(sensor_id, function(data) {
          console.log('Sensor ' + data.sensor_id + ' returned ' + data.temperature);
       });
-   };
+   });
 }
 
 // Read current temperature from sensor
