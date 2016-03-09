@@ -76,7 +76,7 @@ function readTemp(sensor_id, callback){
 
 // Create a wrapper function which we'll use specifically for logging
 function scheduleLogging(interval){
-   setInterval(readTemp, interval, sensor_id, insertTemp);
+   setInterval(readAllTemperatures, interval, insertTemp);
 };
 
 // Start temperature logging (every 5 min).
