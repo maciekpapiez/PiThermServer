@@ -40,6 +40,7 @@ function readAllTemperatures(callback) {
    mapping.forEach(function(sensor_id) {
       readTemp(sensor_id, function(data) {
          console.log('Sensor ' + data.sensor_id + ' returned ' + data.temperature + ' on ' + data.timestamp);
+         insertTemp(data);
       });
    });
 }
