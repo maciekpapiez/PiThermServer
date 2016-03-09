@@ -81,7 +81,7 @@ function scheduleLogging(interval){
 };
 
 // Start temperature logging (every 5 min).
-var msecs = 10 * 1000; // log interval duration in milliseconds
+var msecs = 120 * 1000; // log interval duration in milliseconds
 scheduleLogging(msecs);
 
 console.log('Server is logging to database at '+msecs+'ms intervals');
